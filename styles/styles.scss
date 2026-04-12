@@ -1,0 +1,24 @@
+@import 'normalize', 'colors', 'mixins';
+
+body {
+  background-color: $gray-950;
+  display: flex;
+  flex-flow: column;
+  justify-content: end;
+}
+
+.rating-sheet {
+  @include gradient-1($gradient-1-start, $gradient-1-end);
+}
+
+.state-rate {
+  display: block;
+  padding: 28px 24px;
+}
+
+.rating-sheet__content {
+  margin: 24px 0;
+}
+
+.attribution {
+}

@@ -1,0 +1,5 @@
+@import 'colors';
+
+@mixin gradient-1($start-color, $end-color, $direction: to top) {
+  background: linear-gradient($direction, $start-color, $end-color);
+}
