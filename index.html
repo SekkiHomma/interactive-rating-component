@@ -9,72 +9,84 @@
     <!-- displays site properly based on user's device -->
     <link href="styles/styles.css" rel="stylesheet" />
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
     <!-- Rating state start -->
-    <div class="rating-sheet">
-      <section class="state-rate">
-        <div class="rating-sheet__icon">
-          <img src="./images/icon-star.svg" alt="star icon" />
-        </div>
-        <div class="rating-sheet__radio-rate">
-          <form>
-            <fieldset class="rating-sheet__content">
-              <legend>How did we do?</legend>
-              <p>
-                Please let us know how we did with your support request. All feedback is appreciated
-                to help us improve our offering!
-              </p>
-              <div class="rating-radio__value">
-                <div class="rating-radio__variant-option">
-                  <input type="radio" id="value_1" name="rating" value="1" />
-                  <label for="value_1" class="rating-radio__label">1</label>
+    <main class="content">
+      <div class="rating-sheet">
+        <section class="state-rate">
+          <div class="rating-sheet__icon">
+            <img src="./images/icon-star.svg" alt="star icon" />
+          </div>
+          <div class="rating-sheet__radio-rate">
+            <form>
+              <fieldset class="rating-sheet__content">
+                <legend>How did we do?</legend>
+                <div class="rating-sheet__main-content">
+                  <p>
+                    Please let us know how we did with your support request. All feedback is
+                    appreciated to help us improve our offering!
+                  </p>
+                  <div class="rating-radio__value">
+                    <div class="rating-radio__variant-option">
+                      <input type="radio" id="value_1" name="rating" value="1" />
+                      <label for="value_1" class="rating-radio__label">1</label>
+                    </div>
+                    <div class="rating-radio__variant-option">
+                      <input type="radio" id="value_2" name="rating" value="2" />
+                      <label for="value_2" class="rating-radio__label">2</label>
+                    </div>
+                    <div class="rating-radio__variant-option">
+                      <input type="radio" id="value_3" name="rating" value="3" />
+                      <label for="value_3" class="rating-radio__label">3</label>
+                    </div>
+                    <div class="rating-radio__variant-option">
+                      <input type="radio" id="value_4" name="rating" value="4" />
+                      <label for="value_4" class="rating-radio__label">4</label>
+                    </div>
+                    <div class="rating-radio__variant-option">
+                      <input type="radio" id="value_5" name="rating" value="5" />
+                      <label for="value_5" class="rating-radio__label">5</label>
+                    </div>
+                  </div>
                 </div>
-                <div class="rating-radio__variant-option">
-                  <input type="radio" id="value_2" name="rating" value="2" />
-                  <label for="value_2" class="rating-radio__label">2</label>
-                </div>
-                <div class="rating-radio__variant-option">
-                  <input type="radio" id="value_3" name="rating" value="3" />
-                  <label for="value_3" class="rating-radio__label">3</label>
-                </div>
-                <div class="rating-radio__variant-option">
-                  <input type="radio" id="value_4" name="rating" value="4" />
-                  <label for="value_4" class="rating-radio__label">4</label>
-                </div>
-                <div class="rating-radio__variant-option">
-                  <input type="radio" id="value_5" name="rating" value="5" />
-                  <label for="value_5" class="rating-radio__label">5</label>
-                </div>
-              </div>
-            </fieldset>
+              </fieldset>
 
-            <button class="radio-rate__sbmt-btn" type="button">Submit</button>
-          </form>
-        </div>
-      </section>
-      <section class="state-success" style="display: none">
-        <img src="./images/illustration-thank-you.svg" alt="illustration thank you" />
-        <div class="rating-choice">
-          <p>You selected 4 out of 5</p>
-        </div>
-        <div class="text-success">
-          <h2>Thank you!</h2>
-          <p>
-            We appreciate you taking the time to give a rating. If you ever need more support, don’t
-            hesitate to get in touch!
-          </p>
-        </div>
-      </section>
-    </div>
-
+              <button class="radio-rate__sbmt-btn" type="button">SUBMIT</button>
+            </form>
+          </div>
+        </section>
+        <section class="state-success" style="display: none">
+          <img src="./images/illustration-thank-you.svg" alt="illustration thank you" />
+          <div class="rating-choice">
+            <p>You selected 4 out of 5</p>
+          </div>
+          <div class="text-success">
+            <h2>Thank you!</h2>
+            <p>
+              We appreciate you taking the time to give a rating. If you ever need more support,
+              don’t hesitate to get in touch!
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
     <!-- Rating state end -->
 
-    <footer class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded
-      by <a href="https://github.com/SekkiHomma" target="_blank">Sekki Homma</a>.
+    <footer class="footer-attribution">
+      <div class="footer-attribution__content">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>.
+        Coded by <a href="https://github.com/SekkiHomma" target="_blank"> Sekki Homma</a>.
+      </div>
     </footer>
   </body>
 </html>
