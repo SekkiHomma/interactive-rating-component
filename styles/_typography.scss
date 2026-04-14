@@ -1,0 +1,57 @@
+$font-family-base: 'Overpass', sans-serif;
+
+@mixin text-preset-1-bold {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0;
+}
+
+@mixin text-preset-2-bold {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+@mixin text-preset-3-bold {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+@mixin text-preset-4-bold {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 2px;
+}
+
+@mixin text-preset-4-regular {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+@mixin text-preset-5-bold {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1.87px;
+}
+
+@mixin text-preset-5-semi-bold {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.17px;
+}
+
+@mixin text-preset-5-regular {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0;
+}

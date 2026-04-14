@@ -119,14 +119,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 24px;
 }
 
 .rating-sheet {
   background: linear-gradient(to top, #181E27, #232A34);
   border-radius: 15px;
   width: 100%;
-  max-width: 420px;
+  max-width: 412px;
 }
 
 .state-rate {
@@ -139,14 +138,16 @@ body {
 }
 
 .rating-sheet__main-content {
-  margin-top: 24px;
+  margin-top: 16px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 .rating-sheet__main-content p {
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0;
   color: #969FAD;
 }
 
@@ -169,14 +170,18 @@ form {
 }
 
 legend {
-  font-weight: 700;
   font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0;
   color: #FFFFFF;
 }
 
-.radio-rate__sbmt-btn {
-  font-weight: 700;
+.radio-rate__sub-btn {
   font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1.87px;
   color: #131518;
   background-color: #FC7614;
   letter-spacing: 1.9px;
@@ -186,7 +191,7 @@ legend {
   transition: 0.3s;
 }
 
-.radio-rate__sbmt-btn:hover {
+.radio-rate__sub-btn:hover {
   background-color: #FFFFFF;
   color: #131518;
 }
@@ -201,14 +206,14 @@ legend {
   align-items: center;
 }
 .rating-sheet__icon img {
-  max-height: 16px;
-  max-width: 16px;
+  width: 14px;
+  height: 14px;
 }
 
 .rating-radio__value {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  justify-content: space-between;
 }
 
 .rating-radio__label {
@@ -220,8 +225,10 @@ legend {
   height: 42px;
   width: 42px;
   transition: 0.3s;
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1.87px;
   color: #969FAD;
 }
 
@@ -238,6 +245,51 @@ input[type=radio] {
 .rating-radio__label:hover {
   background-color: #FFFFFF;
   color: #262E38;
+}
+
+@media (min-width: 375px) {
+  .content {
+    padding: 0 24px;
+  }
+}
+@media (min-width: 768px) {
+  .state-rate {
+    padding: 34px 30px;
+  }
+  .rating-sheet__icon {
+    width: 48px;
+    height: 48px;
+  }
+  .rating-sheet__icon img {
+    width: 16px;
+    height: 16px;
+  }
+  legend {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0;
+  }
+  .rating-sheet__main-content p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+  .rating-radio__label {
+    height: 51px;
+    width: 51px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+  }
+  .radio-rate__sub-btn {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.17px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
