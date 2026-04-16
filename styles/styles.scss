@@ -27,6 +27,45 @@ body {
   padding: 28px 24px;
 }
 
+.state-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 24px;
+  gap: 24px;
+
+  img {
+    max-width: 144px;
+    max-height: 96px;
+  }
+}
+
+.rating-choice {
+  @include text-preset-5-regular;
+  color: $orange-500;
+  background-color: $gray-900;
+  border-radius: 22px;
+  padding: 6px 12px;
+}
+
+.text-success {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  h2 {
+    @include text-preset-2-bold;
+    color: $white;
+    text-align: center;
+  }
+
+  p {
+    @include text-preset-5-regular;
+    color: $gray-500;
+    text-align: center;
+  }
+}
+
 .rating-sheet__content {
   margin-top: 24px;
 }
@@ -115,6 +154,7 @@ legend {
   @include text-preset-5-bold;
   color: $gray-500;
 }
+
 input[type='radio']:checked + .rating-radio__label {
   background-color: $orange-500;
   color: $gray-900;
@@ -130,9 +170,44 @@ input[type='radio'] {
   color: $gray-900;
 }
 
+.is-hidden {
+  display: none;
+}
+
 @media (min-width: 375px) {
   .content {
     padding: 0 24px;
+  }
+}
+
+@media (min-width: 400px) {
+  .state-success {
+    gap: 32px;
+    padding: 44px 36px;
+
+    img {
+      max-width: 162px;
+      max-height: 108px;
+    }
+  }
+
+  .rating-choice {
+    @include text-preset-4-regular;
+    padding: 6px 19px;
+  }
+
+  .text-success {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h2 {
+      @include text-preset-1-bold;
+    }
+
+    p {
+      @include text-preset-4-regular;
+    }
   }
 }
 

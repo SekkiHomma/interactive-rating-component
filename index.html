@@ -56,18 +56,17 @@
                   </div>
                 </div>
               </fieldset>
-
               <button class="radio-rate__sub-btn" type="button">SUBMIT</button>
             </form>
           </div>
         </section>
-        <section class="state-success" style="display: none">
+        <section class="state-success is-hidden">
           <img src="./images/illustration-thank-you.svg" alt="illustration thank you" />
           <div class="rating-choice">
-            <p>You selected 4 out of 5</p>
+            <p>You selected <span class="selected-rating">0</span> out of 5</p>
           </div>
           <div class="text-success">
-            <h2>Thank you!</h2>
+            <h2 class="">Thank you!</h2>
             <p>
               We appreciate you taking the time to give a rating. If you ever need more support,
               don’t hesitate to get in touch!
@@ -80,9 +79,14 @@
 
     <footer class="footer-attribution">
       <div class="footer-attribution__content">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>.
-        Coded by <a href="https://github.com/SekkiHomma" target="_blank"> Sekki Homma</a>.
+        <span
+          >Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a
+          >.&nbsp;</span
+        >
+        <span
+          >Coded by <a href="https://github.com/SekkiHomma" target="_blank"> Sekki Homma</a>.</span
+        >
       </div>
     </footer>
     <script src="script.js"></script>
