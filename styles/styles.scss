@@ -181,6 +181,9 @@ input[type='radio'] {
 }
 
 @media (min-width: 400px) {
+  .rating-sheet {
+    border-radius: 30px;
+  }
   .state-success {
     gap: 32px;
     padding: 44px 36px;
